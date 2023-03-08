@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > ul{
+            display: none;
+        }
+
+        div > ul > li{
+            padding: 5px 10px;
+        }
+
+        div:hover > ul{
+            display: block;
+        }
+
+        div a{
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        div a:hover{
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de menu usando Pseudo-Classes</h1>  
+    <p>Passe o mouse abaixo para exibir o menu</p>
+    <div>
+        <p>Passe o mouse aqui</p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/wesley.rubel.3/" target="_blank" rel="external">Meu Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCb2HNbHDuhtkZB7KanpKJCw" target="_blank" rel="external">Meu Youtube</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/wesleyrubel/" target="_blank" rel="external">Meu Instagram</a>
+            </li>
+        </ul>
+    </div>  
+    <p>Fim do exemplo</p>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgba(136, 0, 0, 0.384);
+        }
+
+        .especial::before{
+            content: ' ➡️';
+        }
+
+        .especial::after{
+            content: ' ⬅️';    
+        }
+
+        div  a{
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>  
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="external" class="especial">Site do CursoemVideo</a></li>
+        <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiAj56FgJ37AhUD1ZEKHeHEAnAYABAAGgJjZQ&ohost=www.google.com&cid=CAESbeD2Q_fi4jq0NVA5l0nbYaabU1eF-nTKzjRH7taDdRn5VnaB299wsle_9iedI_GJAb8Pub3zsu8U6lbiljsO-9t_HkpSU48BNCpaM0g8mslHz_lwZUdyW24oz1QHCmu-8Nc47WxzSJ5kGej-e-0&sig=AOD64_04ao1Sifuc-Yi74EjSFTjlnA7qUw&q&adurl&ved=2ahUKEwjtypiFgJ37AhXYLrkGHTBIDk0Q0Qx6BAgIEAE" target="_blank" rel="external">Site da Alura</a></li>
+    </ul> 
+    <div>
+        <p>
+            Para aprender HTML5 e CSS3, acesse o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">GitHub do Guanabara</a>
+        </p>
+        <p>
+            Se quiser saber mais sobre os padrões, visite o site do <a href="https://www.w3c.br/" target="_blank" rel="external">Escritório do W3C no Brasil</a>
+        </p>
+        <p>
+            Para acompanhar os cursos, acesse o <a href="https://www.youtube.com/user/cursosemvideo?app=desktop" target="_blank" rel="external" class="especial">canal do CursoemVideo</a>
+        </p>
+    </div>
+</body>
+</html>
