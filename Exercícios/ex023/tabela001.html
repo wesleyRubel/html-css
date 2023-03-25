@@ -15,6 +15,10 @@
             border-collapse: collapse; 
         }
 
+        table.tabela1{
+            height: 500px;
+        }
+
         th{
             border: 1px solid black;
             padding: 5px;
@@ -25,6 +29,12 @@
         td{
             border: 1px solid black;
             padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .numero{
+            text-align: right;
         }
 
         tr.linha{
@@ -61,26 +71,26 @@
                 TABLE HEADER=Cabeçalho da tabela
                 TABLE DATA=Dado da tabela
     --> 
-    <table>
+    <table class="tabela1">
         <tr> <!--Primeira Linha-->
-            <td class="dado">A1
+            <td>A1
             <td>B1
             <td>C1
         
-        <tr class="linha"> <!--Segunda Linha-->
+        <tr> <!--Segunda Linha-->
             <td>A2
             <td>B2
-            <td>C2
+            <td class="numero">C2
         
         <tr> <!--Terceira Linha-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
-        <tr class="linha"> <!--Quarta Linha-->
+        <tr> <!--Quarta Linha-->
             <td>A4</td>
             <td>B4</td>
-            <td class="dado">C4</td>
+            <td>C4</td>
         </tr>
     </table> 
     <h2>Boletim Escolar</h2> 
