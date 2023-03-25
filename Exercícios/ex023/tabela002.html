@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        tfoot{
+            text-align: center;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .right{
+            text-align: right;
+        }
+
+        .green{
+            color: green;    
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>    
+    <!--
+        Anatomia de tabelas grandes
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Unidade Federativa</th>
+                <th>População <br> (Censo 2010)</th>
+                <th>População <br> (Prévia 2022)</th>
+                <th>Mudança</th>
+                <th>% da pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">1</td>
+                <td>São Paulo</td>
+                <td class="right">41 262 199</td>
+                <td class="right">46 024 937</td>
+                <td class="center green">+11.5%</td>
+                <td class="center">22,2%</td>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Minas Gerais</td>
+                <td class="right">19 597 330</td>
+                <td class="right">20 732 660</td>
+                <td class="center green">+5.8%</td>
+                <td class="center">10,0%</td>
+            </tr>
+            <tr>
+                <td class="center">3</td>	 
+                <td>Rio de Janeiro</td>	
+                <td class="right">15 989 929</td>	
+                <td class="right">16 615 526</td>	
+                <td class="center green">+3.9%</td>	
+                <td class="center">8,0%</td>
+            </tr>
+            <tr>
+                <td class="center">4</td>
+                <td>Bahia</td>
+                <td class="right">14 016 906</td>	
+                <td class="right">14 659 023</td>	
+                <td class="center green">+4.6%</td>	
+                <td class="center">7,1%</td>
+            </tr>
+            <tr>
+                <td class="center">5</td>	 
+                <td>Paraná</td>	
+                <td class="right">10 444 526</td>
+                <td class="right">11 835 379</td>	
+                <td class="center green">+13.3%</td>	
+                <td class="center">5,7%</td>
+            </tr>
+            <tr>
+                <td class="center">6</td>	 
+                <td>Rio Grande do Sul</td>	
+                <td class="right">10 693 929</td>
+                <td class="right">11 088 065</td>	
+                <td class="center green">+3.7%</td>	
+                <td class="center">5,3%</td>
+            </tr>
+            <tr>
+                <td class="center">7</td>	 
+                <td>Pernambuco</td>
+                <td class="right">8 796 448</td>	
+                <td class="right">9 051 113</td>	
+                <td class="center green">+2.9%</td>	
+                <td class="center">4,4%</td>
+            </tr>
+            <tr>
+                <td class="center">8</td>	 
+                <td>Ceará</td>	
+                <td class="right">8 452 381</td>	
+                <td class="right">8 936 431</td>	
+                <td class="center green">+5.7%</td>	
+                <td class="center">4,3%</td>
+            </tr>
+            <tr>
+                <td class="center">9</td>	
+                <td>Pará</td> 	
+                <td class="right">7 581 051</td>	
+                <td class="right">8 442 962</td>	
+                <td class="center green">+11.4%	</td>
+                <td class="center">4,1%</td>
+            </tr>
+            <tr>
+                <td class="center">10</td> 
+                <td>Santa Catarina</td>	
+                <td class="right">6 248 436</td>	
+                <td class="right">7 762 154</td>	
+                <td class="center green">+24.2%</td>	
+                <td class="center">3,7%</td>
+            </tr>
+            <tr>
+                <td class="center">11</td>	 
+                <td>Goiás</td>	
+                <td class="right">6 003 788</td>	
+                <td class="right">6 950 976</td>	
+                <td class="center green">+15.8%</td>	
+                <td class="center">3,3%</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>	 
+                <td>Maranhão</td>	
+                <td class="right">6 574 789</td>	
+                <td class="right">6 800 605</td>	
+                <td class="center green">+3.4%</td>	
+                <td class="center">3,3%</td>
+            </tr>
+            <tr>
+                <td class="center">13</td>	 
+                <td>Espírito Santo</td>	
+                <td class="right">3 514 952</td>	
+                <td class="right">4 108 508</td>	
+                <td class="center green">+13.1%</td>	
+                <td class="center">1,9%</td>
+            </tr>
+            <tr>
+                <td class="center">14</td>	 
+                <td>Paraíba</td>	
+                <td class="right">3 766 528</td>	
+                <td class="right">4 030 961</td>	
+                <td class="center green">+7.0%</td>	
+                <td class="center">1,9%</td>
+            </tr>
+            <tr>
+                <td class="center">15</td>	 
+                <td>Amazonas</td>	
+                <td class="right">3 483 985</td>	
+                <td class="right">3 952 262</td>	
+                <td class="center green">+13.4%</td>	
+                <td class="center">1,9%</td>
+            </tr>
+            <tr>
+                <td class="center">16</td>	 
+                <td>Mato Grosso</td>	
+                <td class="right">3 035 122</td>	
+                <td class="right">3 784 239</td>	
+                <td class="center green">+24.7%</td>	
+                <td class="center">1,8%</td>
+            </tr>
+            <tr>
+                <td class="center">17</td>	 
+                <td>Rio Grande do Norte</td>	
+                <td class="right">3 168 027</td>	
+                <td class="right">3 303 953</td>	
+                <td class="center green">+4.3%</td>	
+                <td class="center">1,6%</td>
+            </tr>
+            <tr>
+                <td class="center">18</td>	 
+                <td>Piauí</td>	
+                <td class="right">3 118 360</td>	
+                <td class="right">3 270 174</td>	
+                <td class="center green">+4.9%</td>	
+                <td class="center">1,6%</td>
+            </tr>
+            <tr>
+                <td class="center">19</td>	 
+                <td>Alagoas</td>	
+                <td class="rigth">3 120 494</td>	
+                <td class="right">3 125 254</td>	
+                <td class="center green">+0.2%</td>	
+                <td class="center">1,5%</td>
+            </tr>
+            <tr>
+                <td class="center">20</td>	 
+                <td>Distrito Federal</td>	
+                <td class="right">2,923,369</td>	
+                <td class="right">2 923 369</td>	
+                <td class="center green">+13.7%</td>	
+                <td class="center">1,4%</td>
+            </tr>
+            <tr>
+                <td class="center">21</td>	 
+                <td>Mato Grosso do Sul</td>	
+                <td class="right">2 449 024</td>	
+                <td class="right">2 833 742</td>	
+                <td class="center green">+15.7%</td>	
+                <td class="center">1,4%</td>
+            </tr>
+            <tr>
+                <td class="center">22</td>	 
+                <td>Sergipe</td>	
+                <td class="right">2 068 017</td>	
+                <td class="right">2 211 868</td>	
+                <td class="center green">+7.0%</td>	
+                <td class="center">1,1%</td>
+            </tr>
+            <tr>
+                <td class="center">23</td>	 
+                <td>Rondônia</td>	
+                <td class="right">1 562 409</td>	
+                <td class="right">1 616 379</td>	
+                <td class="center green">+3.5%</td>	
+                <td class="center">0,8%</td>
+            </tr>
+            <tr>
+                <td class="center">24</td>	 
+                <td>Tocantins</td>	
+                <td class="right">1 383 445</td>	
+                <td class="right">1 584 306</td>	
+                <td class="center green">+14.5%</td>	
+                <td class="center">0,8%</td>
+            </tr>
+            <tr>
+                <td class="center">25</td>	 
+                <td>Acre</td>	
+                <td class="right">733 559</td>	
+                <td class="right">829 780</td>	
+                <td class="center green">+13.1%</td>	
+                <td class="center">0,4%</td>
+            </tr>
+            <tr>
+                <td class="center">26</td>	 
+                <td>Amapá</td>	
+                <td class="right">669 526</td>	
+                <td class="right">774 268</td>	
+                <td class="center green">+15.6%</td>	
+                <td class="center">0,4%</td>
+            </tr>
+            <tr>
+                <td class="center">27</td>	 
+                <td>Roraima</td>	
+                <td class="right">450 479</td>	
+                <td class="right">634 805</td>	
+                <td class="center green">+40.9%</td>	
+                <td class="center">0.3%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Totais</th>
+                <td><strong>27</strong></td>
+                <td><strong>201 553 534</strong></td>
+                <td><strong>109 867 525</strong></td>
+                <td><strong>38.6%</strong></td>
+                <td><strong>53%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
