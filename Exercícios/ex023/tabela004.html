@@ -13,6 +13,7 @@
         table{
             width: 700px;
             border-collapse: collapse;
+            margin-bottom: 20px;
         }
 
         thead{
@@ -31,10 +32,18 @@
             padding: 5px;
             text-align: center;    
         }
+
+        table.tab2{
+            width: 400px;
+        }
+
+        .tab2 > thead{
+            background-color: darkblue;
+        }
     </style>
 </head>
 <body>
-    <h1>Exemplo de Tabela com mesclagem de células</h1>   
+    <h1>Exemplo de Tabelas com mesclagem de células</h1>   
     <table>
         <thead>
             <tr>
@@ -84,5 +93,82 @@
             </tr>
         </tbody>
     </table> 
+    <table class="tab2">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Vendedor</th>
+                <th>Valor da Venda</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01/05/2021</td>
+                <td rowspan="5">Alessandra</td>
+                <td>R$ 969,00</td>
+            </tr>
+            <tr>
+                <td>02/05/2021</td>
+                <td>R$ 841,00</td>
+            </tr>
+            <tr>
+                <td>03/05/2021</td>
+                <td>R$ 560,00</td>
+            </tr>
+            <tr>
+                <td>04/05/2021</td>
+                <td>R$ 391,00</td>
+            </tr>
+            <tr>
+                <td>05/05/2021</td>
+                <td>R$ 693,00</td>
+            </tr>
+
+            <tr>
+                <td>01/05/2021</td>
+                <td rowspan="5">Camila</td>
+                <td>R$ 691,00</td>
+            </tr>
+            <tr>
+                <td>02/05/2021</td>
+                <td>R$ 358,00</td>
+            </tr>
+            <tr>
+                <td>03/05/2021</td>
+                <td>R$ 925,00</td>
+            </tr>
+            <tr>
+                <td>04/05/2021</td>
+                <td>R$ 796,00</td>
+            </tr>
+            <tr>
+                <td>05/05/2021</td>
+                <td>R$ 638,00</td>
+            </tr>
+
+
+            <tr>
+                <td>01/05/2021</td>
+                <td rowspan="5">Amanda</td>
+                <td>R$ 686,00</td>
+            </tr>
+            <tr>
+                <td>02/05/2021</td>
+                <td>R$ 984,00</td>
+            </tr>
+            <tr>
+                <td>03/05/2021</td>
+                <td>R$ 637,00</td>
+            </tr>
+            <tr>
+                <td>04/05/2021</td>
+                <td>R$ 144,00</td>
+            </tr>
+            <tr>
+                <td>05/05/2021</td>
+                <td>R$ 620,00</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
