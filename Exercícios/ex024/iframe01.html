@@ -6,20 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
     <style>
-        
+        h2{
+            text-align: center;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            width: 50vw;
+            height: 50vh;
+            border: 2px solid rgba(0, 0, 0, 0.589);
+        }    
     </style>
 </head>
 <body>
-    <h1>Testando o uso de um iframe</h1>  
+    <h1>Trabalhando com iframes</h1>  
     <p>
-        Acessando o site do <iframe src="https://www.cursoemvideo.com/" frameborder="0">
-            <a href="https://www.cursoemvideo.com/">CursoemVídeo</a>
-        </iframe> para aprender a programar.
-    </p>  
-    <p>
-        O site do <iframe src="https://wesleyrubel.github.io/projetos/desafio%2010/android.html" frameborder="0" scolling="no">
-            <a href="https://wesleyrubel.github.io/projetos/desafio%2010/android.html">Acesse o link da página</a>    
-        </iframe> é muito legal.
-    </p>
+        Abaixo poderemos ver alguns sites sendo exibidos dentro da página atual por meio da utilização de iframes.
+    </p> 
+    <h2>Veja abaixo o site do CursoemVídeo</h2>
+    <iframe src="https://www.cursoemvideo.com/" frameborder="0">
+        <p>
+            Desculpe! Não conseguimos carregar a página. Acesse o site <a href="https://www.cursoemvideo.com/" target="_blank" rel="external">clicando aqui</a>
+        </p>
+    </iframe> 
+    <h2>Veja abaixo o projeto "Página Android"</h2>
+    <iframe src="https://wesleyrubel.github.io/projetos/desafio%2010/android.html" frameborder="0">
+        <p>
+            Desculpe! Não conseguimos carregar á página. Acesse o site <a href="https://wesleyrubel.github.io/projetos/desafio%2010/android.html" target="_blank" rel="external">clicando aqui</a>
+        </p>
+    </iframe>
 </body>
 </html>
