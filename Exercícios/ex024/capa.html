@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa do iframe</title>
+    <style>
+        @font-face {
+            font-family: goodTimes;
+            src: url('./fontes/good-times.otf') format('Opentype');
+        }
+
+        html{
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            position: relative;
+        }
+
+        div{
+            width: 80vw;
+            margin: auto;
+            color: white;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,50%);
+        }
+
+        div > h1{
+            font-family: goodTimes,sans-serif;
+            font-size: 3em;
+            padding: 40px 0px 20px 0px;
+        }
+
+        div > p{
+            font-family: 'goodTimes', sans-serif;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Seja Bem Vindo!</h1>
+        <p>Escolha uma opção acima para carregar uma página</p>
+    </div>    
+</body>
+</html>
