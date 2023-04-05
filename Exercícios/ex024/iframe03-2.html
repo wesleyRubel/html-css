@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            width: 90vw;
+            height: 500px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Navegando por por iframes</h1>    
@@ -16,19 +28,19 @@
     </p>
     <ul>
         <li>
-            <a href="#">Página Android</a>
+            <a href="./paginas-extras/desafio 10/android.html" target="frame">Página Android</a>
         </li>
         <li>
-            <a href="#">Projeto Cordel</a>
+            <a href="./paginas-extras/desafio12-corrigido/index.html" target="frame">Projeto Cordel</a>
         </li>
         <li>
-            <a href="#">Projeto página de captura</a>
+            <a href="./paginas-extras/pagina-de-captura-xadrez/index.html" target="frame">Projeto página de captura</a>
         </li>
         <li>
-            <a href="#">Projeto página de turismo</a>
+            <a href="./paginas-extras/pagina-turismo/index.html" target="frame">Projeto página de turismo</a>
         </li>
     </ul>
-    <iframe frameborder="0">
+    <iframe frameborder="0" name="frame">
         Não foi possível carregar o conteúdo.
     </iframe>
     <p>
