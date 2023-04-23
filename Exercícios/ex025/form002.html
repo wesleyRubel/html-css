@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            margin: 16px;
+        }
+    </style>
 </head>
 <body>
     <h1>Trabalhando com formulários</h1>   
     <form action="cadastro.php" method="post" autocomplete="on">
-        <p>
+        <div>
             <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Nome de Usuário" autocomplete="username">
-        </p>
-        <p>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Nome de usuário" autocomplete="username">
+        </div>    
+        <div>
             <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" required minlength="8" maxlength="16" placeholder="Digite sua Senha" autocomplete="current-password">
-        </p>
-        <p>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="16" placeholder="Senha do usuário" autocomplete="current-password">
+        </div>
+        <div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-        </p>
+        </div>
     </form> 
 </body>
 </html>
