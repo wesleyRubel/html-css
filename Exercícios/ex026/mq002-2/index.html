@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/print.css" media="print"> <!--Media type para impressão-->
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation:landscape)"> <!--Media type para telas com media feature para paisagem-->
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation:portrait)"> <!--Media type para telas com media feature para retrato-->
 </head>
 <body>
     <header>
         <h1>Esportes</h1>
-        <ul>
-            <li>Home</li>
-            <li>Política</li>
-            <li>Tecnologia</li>
-            <li>Ciência</li>
-        </ul>
+        <menu>
+            <ul>
+                <li>Home</li>
+                <li>Política</li>
+                <li>Tecnologia</li>
+                <li>Ciência</li>
+            </ul>
+        </menu>
     </header> 
     <main>
         <article>
             <div id="background"></div>
+            <div id="image-content">
+                <img src="./imagens/Chess-king-landscape.jpg" alt="Chess">
+            </div>
             <h2>Benefícios do xadrez no desenvolvimento mental</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa natus provident, non quod excepturi error, quisquam corporis saepe dolore officiis eveniet explicabo velit praesentium consequuntur similique et, in eligendi dicta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quibusdam a. Nihil cupiditate excepturi assumenda qui esse, sapiente minima facere ratione id incidunt repellendus soluta voluptatem, voluptate nulla nostrum ducimus!

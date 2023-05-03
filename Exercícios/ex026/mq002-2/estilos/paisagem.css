@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/*Configurações de estilos para telas que estão no modo paisagem*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(202, 202, 202);
+}
+
+header{
+    background-color: rgb(163, 163, 163);
+    padding: 10px;
+}
+
+header > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header li{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.39);
+}
+
+article > div#background{
+    height: 400px;
+    background: url(../imagens/Chess-king-landscape.jpg) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+article >div#image-content{
+    display: none;
+}
+
+article > h2{
+    margin: 40px 0px 20px 0px;
+}
+
+article > p{
+    margin: 16px;
+    text-align: justify;
+    line-height: 24px;
+}
