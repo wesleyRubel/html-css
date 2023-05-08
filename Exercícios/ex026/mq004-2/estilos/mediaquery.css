@@ -3,5 +3,83 @@
 /*Todas as demais mídias*/
 
 @media print{
-    /*Configurações para impressão*/    
+    /*Configurações para impressão*/  
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    } 
+
+    main{
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    main::after{
+        content: 'Esta página foi impressa no site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main > h1{
+        color: black;
+        text-shadow: none;
+    }
+    
+    main > #phone{
+        display: none;
+    }
+
+    main > #print{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    /*Configurações para tablets*/  
+    body{
+        background: url(../imagens/back-tablet.jpg) center center no-repeat;
+        background-size: cover;
+    } 
+    
+    main > #phone{
+        display: none;
+    }
+
+    main > #tablet{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    /*Configurações para notebooks e desktops*/   
+    body{
+        background: url(../imagens/back-pc.jpg) center center no-repeat;
+        background-size: cover;
+    } 
+
+    main > #phone{
+        display: none;
+    }
+
+    main > #pc{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    /*Configurações para grandes telas*/  
+    body{
+        background: url(../imagens/back-tv.jpg) center center no-repeat;
+        background-size: cover;
+    } 
+    
+    main > #phone{
+        display: none;
+    }
+
+    main > #tv{
+        display: block;
+        margin: auto;
+    }
 }
