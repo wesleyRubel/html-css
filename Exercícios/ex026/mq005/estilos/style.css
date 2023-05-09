@@ -54,6 +54,17 @@ article > h2{
     padding: 20px;
 }
 
+article > img{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#phone{display:block;}
+#tablet{display: none;}
+#pc{display: none;}
+#tv{display: none;}
+
 article > p{
     text-align: justify;
     margin-bottom: 20px;
