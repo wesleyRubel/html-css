@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="icon-burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -48,6 +49,14 @@
         </article>
     </main>
     <script>
+        function mudarTamanho(){
+            var menu=window.document.getElementsByTagName('menu')[0];
+            if(window.innerWidth>=768){
+                menu.style.display="block";
+            }else{
+                menu.style.display="none";
+            }
+        }
         function clickMenu(){
             var menu=window.document.getElementsByTagName('menu')[0];
             if(menu.style.display=='block'){
