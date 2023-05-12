@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/*Configurações para impressão*/
+@media print {
+
+    header {
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    header>h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    header > p {
+        margin-bottom: 16px;
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        width: 100%;
+        text-shadow: none;
+    }
+
+    #icon-menu {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+
+    .titulo-android {
+        margin-top: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+
+    main>article>p {
+        width: 90%;
+        margin: auto;
+        margin-top: 16px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+
+    main>article>p>strong {
+        color: black;
+    }
+
+    main>article>p>a {
+        color: black;
+        font-weight: bold;
+        padding: 0px;
+    }
+
+    main>article>p>a::after {
+        content: '';
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    #video{
+        display: none;
+    }
+
+    aside{
+        margin-top: 30px;
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    aside > h2{
+        color: black;
+        padding: 10px;
+    }
+
+    aside > p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    aside > p > strong{
+        color: black;
+    }
+
+    aside > ul{
+        columns: 2;
+    }
+
+    aside > p > a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 0px;
+    }
+
+    aside > p > a::after{
+        content: '';
+    }
+
+    footer{
+        padding: 10px;
+        text-align: center;
+        color: black;
+    }
+
+    footer > p{
+        display: none;
+    }
+
+    footer::after{
+        content: 'Esta página foi impressa no site https://wesleyrubel.github.io/repositorio/';
+    }
+
+}
