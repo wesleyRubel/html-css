@@ -70,7 +70,7 @@ header > p{
 
 header > menu{
     display: none;
-    background-color: var(--cor5);
+   /* background-color: var(--cor5);*/
 }
 
 header > menu > ul{

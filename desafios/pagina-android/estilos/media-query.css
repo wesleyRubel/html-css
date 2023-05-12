@@ -14,7 +14,7 @@
         color: black;
     }
 
-    header > p {
+    header>p {
         margin-bottom: 16px;
         text-align: center;
         color: black;
@@ -71,57 +71,93 @@
         display: block;
     }
 
-    #video{
+    #video {
         display: none;
     }
 
-    aside{
+    aside {
         margin-top: 30px;
         padding: 15px;
         box-shadow: none;
     }
 
-    aside > h2{
+    aside>h2 {
         color: black;
         padding: 10px;
     }
 
-    aside > p{
+    aside>p {
         font-size: 18px;
         line-height: 26px;
     }
 
-    aside > p > strong{
+    aside>p>strong {
         color: black;
     }
 
-    aside > ul{
+    aside>ul {
         columns: 2;
     }
 
-    aside > p > a{
+    aside>p>a {
         text-decoration: none;
         color: black;
         font-weight: bold;
         padding: 0px;
     }
 
-    aside > p > a::after{
+    aside>p>a::after {
         content: '';
     }
 
-    footer{
+    footer {
         padding: 10px;
         text-align: center;
         color: black;
     }
 
-    footer > p{
+    footer>p {
         display: none;
     }
 
-    footer::after{
+    footer::after {
         content: 'Esta página foi impressa no site https://wesleyrubel.github.io/repositorio/';
     }
 
+}
+
+/*Configurações para telas acima de 768px*/
+@media screen and (min-width:768px) {
+    #icon-menu {
+        display: none;
+    }
+
+    header>menu {
+        display: block;
+    }
+
+    header li {
+        display: inline-block;
+        border-top: none;
+    }
+
+    header a {
+        display: inline;
+    }
+
+    main {
+        max-width: 900px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    aside > ul{
+        columns: 2;
+    }
 }
