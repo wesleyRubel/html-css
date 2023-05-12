@@ -35,6 +35,7 @@ html,body{
 header{
     background-image: linear-gradient(to top,var(--cor5),var(--cor3));
     padding: 20px 0px 0px 0px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.349);
 }
 
 header > h1{
@@ -101,8 +102,11 @@ header a:hover{
 main{
     width: 90vw;
     margin: auto;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
     background-color: white;
     padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
 }
 
 .titulo-android{
@@ -174,6 +178,77 @@ main iframe{
     left: 5%;
     width: 90%;
     height: 90%;
+}
+
+aside{
+    background-color: #b4d1c1;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+}
+
+aside > h2{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -15px -15px 20px -15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > p{
+    margin: 16px 0px 16px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 24px;
+}
+
+aside > p > strong{
+    color: var(--cor4);
+}
+
+aside > ul{
+    list-style-position: inside;
+    
+    list-style-type: '\00A0\2714\00A0\00A0';
+}
+
+aside > p > a{
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: bold;
+    background-color: #5ce499;
+    padding: 3px;
+}
+
+aside > p > a:hover{
+    text-decoration: underline;
+}
+
+aside > p > a::after{
+    content: '\00A0\1F517';
+}
+
+footer{
+    background-color: var(--cor4);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
+footer a::after{
+    content: '\00A0\1F517';
 }
 
 
